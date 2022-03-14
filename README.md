@@ -42,3 +42,19 @@
 - Loop through the list until you reach the index and return the node at that specific index.
 
 ### Set Pseudocode
+
+- This function should accept an index and a value.
+- Use get menthod to find the specific node.
+- If the node is not found return false.
+- Otherwise, set the value of that node to be the value passed to the function and return true.
+
+### Insert Peseudocode
+
+- If the index is less than zero or greater than or equal to the length of the list, return null.
+- If the index is the same length, push a new node to the end of the list.
+- If the index is 0, unshift a new node to the start of the list.
+- Otherwise, using the get method, access the node at the index -1.
+- Set the next property on that node to be the new node.
+- Set the next property on the new node to be the previous next.
+- increment the length.
+- return true.
