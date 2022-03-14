@@ -48,11 +48,22 @@
 - If the node is not found return false.
 - Otherwise, set the value of that node to be the value passed to the function and return true.
 
-### Insert Peseudocode
+### Insert Pseudocode
 
 - If the index is less than zero or greater than or equal to the length of the list, return null.
 - If the index is the same length, push a new node to the end of the list.
 - If the index is 0, unshift a new node to the start of the list.
+- Otherwise, using the get method, access the node at the index -1.
+- Set the next property on that node to be the new node.
+- Set the next property on the new node to be the previous next.
+- increment the length.
+- return true.
+
+### Remove Pseudocode
+
+- If the index is less than zero or greater than or equal to the length of the list, return undefined.
+- if the index is the same as the length - 1; pop.
+- If the index is 0, shift.
 - Otherwise, using the get method, access the node at the index -1.
 - Set the next property on that node to be the new node.
 - Set the next property on the new node to be the previous next.
