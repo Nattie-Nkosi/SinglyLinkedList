@@ -131,7 +131,7 @@ class SinglyLinkedList {
     return removed;
   }
 
-  // Reverse the linkde list in place
+  // Reverse the linked list in place
   // to be continued
 }
 
