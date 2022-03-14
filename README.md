@@ -1,4 +1,4 @@
-# Linked List Pseudocode 😥
+# Linked List Pseudocode 🙂
 
 ### Pushing Pseudocode
 

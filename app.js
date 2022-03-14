@@ -19,6 +19,7 @@ class SinglyLinkedList {
     this.length = 0;
   }
 
+  // Adding a new node to the end of the list
   push(val) {
     var newNode = new Node(val);
     if (!this.head) {
@@ -32,6 +33,7 @@ class SinglyLinkedList {
     return this;
   }
 
+  // Removing a node from the end of the linked list
   pop() {
     if (!this.head) return undefined;
     var current = this.head;
@@ -51,6 +53,7 @@ class SinglyLinkedList {
     return current;
   }
 
+  // Removing a new node from the beginning of the linked list
   shift() {
     if (!this.head) return undefined;
     var currentHead = this.head;
@@ -62,6 +65,7 @@ class SinglyLinkedList {
     return currentHead;
   }
 
+  // Adding a new node to the beginning of the linked list
   unshift(val) {
     var newNode = new Node(val);
     if (!this.head) {
@@ -75,6 +79,7 @@ class SinglyLinkedList {
     return this;
   }
 
+  // Retrieving a node by its position in the linked list
   get(index) {
     if (index < 0 || index >= this.length) return null;
     var counter = 0;
@@ -127,6 +132,7 @@ class SinglyLinkedList {
   }
 
   // Reverse the linkde list in place
+  // to be continued
 }
 
 var list = new SinglyLinkedList();
