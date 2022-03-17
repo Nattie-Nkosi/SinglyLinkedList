@@ -132,7 +132,37 @@ class SinglyLinkedList {
   }
 
   // Reverse the linked list in place
-  // to be continued
+  reverse() {
+    var node = this.head;
+    this.head = this.tail;
+    this.tail = node;
+    var next;
+    var prev = null;
+
+    for (let i = 0; i < this.length; i++) {
+      next = node.next;
+      node.next = prev;
+      prev = node;
+      node = next;
+    }
+    return this;
+  }
+
+  // Print the list
+  print() {
+    var arr = [];
+    var current = this.head;
+    while (current) {
+      arr.push(current.val);
+      current = current.next;
+    }
+    console.log(arr);
+  }
 }
 
 var list = new SinglyLinkedList();
+list.push(10);
+list.push(20);
+list.push(30);
+list.push(40);
+list.push(50);

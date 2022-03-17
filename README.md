@@ -69,3 +69,12 @@
 - Set the next property on the new node to be the previous next.
 - increment the length.
 - return true.
+
+### reverse() Pseudocode
+
+- Swap the head and tail.
+- Create a variable called next.
+- Create a variable called prev.
+- Create a variable called node and initialize it to the head property.
+- Loop through the list.
+- Set next to be the next property on whatever node is.
